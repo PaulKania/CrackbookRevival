@@ -3,14 +3,14 @@
   <script src="lib.js"></script>
   <script src="options.js"></script>
   <link rel="stylesheet" href="options.css" type="text/css" />
-  <title>Crackbook Settings</title>
+  <title>Website Greylister Options</title>
 </head>
 
 <body>
 
-  <div id="header" class="heading">Crackbook Revival settings</div>
+  <div id="header" class="heading">Website Greylister Options</div>
 
-  <div class="subheading">Junk site list</div>
+  <div class="subheading">Junk site list #1</div>
 
   <div class="details">
     Domains with paths are allowed, for example "google.com/reader".
@@ -18,7 +18,8 @@
 
   <ul id="siteBlacklist" class="domainList">
     <li id="blacklistPlaceholder"><button id="generate_blacklist_button">Generate from History</button></li>
-    <li><button id="add_junk_domain_button">Add domain</button></li>
+    <li><button id="add_junk_domain_button">Add Domain</button></li>
+    <li><button id="save_button">SAVE</button></li>
   </ul>
 
   <div class="subheading">Schedule</div>
@@ -29,16 +30,6 @@
       and
       <input id="endTime" name="endTime" type="text" />
       <span class="details">(24-hour format)</span>
-  </div>
-
-  <div id="weekdays">
-    <label><input id="weekday-0" name="weekday-0" type="checkbox" />Sun</label>
-    <label><input id="weekday-1" name="weekday-1" type="checkbox" />Mon</label>
-    <label><input id="weekday-2" name="weekday-2" type="checkbox" />Tue</label>
-    <label><input id="weekday-3" name="weekday-3" type="checkbox" />Wed</label>
-    <label><input id="weekday-4" name="weekday-4" type="checkbox" />Thu</label>
-    <label><input id="weekday-5" name="weekday-5" type="checkbox" />Fri</label>
-    <label><input id="weekday-6" name="weekday-6" type="checkbox" />Sat</label>
   </div>
 
   <div class="subheading">Parameters</div>
@@ -69,9 +60,17 @@
     </div>
   </div>
 
-  <p>
-    <button id="save_button">SAVE</button>
-  </p>
+  <div id="weekdays">
+    <label><input id="weekday-0" name="weekday-0" type="checkbox" />Sun</label>
+    <label><input id="weekday-1" name="weekday-1" type="checkbox" />Mon</label>
+    <label><input id="weekday-2" name="weekday-2" type="checkbox" />Tue</label>
+    <label><input id="weekday-3" name="weekday-3" type="checkbox" />Wed</label>
+    <label><input id="weekday-4" name="weekday-4" type="checkbox" />Thu</label>
+    <label><input id="weekday-5" name="weekday-5" type="checkbox" />Fri</label>
+    <label><input id="weekday-6" name="weekday-6" type="checkbox" />Sat</label>
+  </div>
+  
+
 
   <span id="saved_message" style="display: none">
     Settings saved.
