@@ -1,15 +1,15 @@
 {
-  "name": "Crackbook Revival",
-  "short_name": "Crackbook-RV",
-  "version": "1.5.1",
+  "name": "Website Greylister",
+  "short_name": "Site Greylister",
+  "version": "1.5.2",
   "manifest_version": 2,
-  "description": "Limit junk sites in your daily infodiet.",
+  "description": "Take a moment between page loads to think. Moderate the speed of the web",
   "icons": {
     "128": "images/hamburger-128px.png"
   },
   "browser_action": {
     "default_icon": "images/carrot-19px.png",
-    "default_title": "Crackbook Revival",
+    "default_title": "Website Greylister",
     "default_popup": "popup.html"
   },
   "background": {
